@@ -1,24 +1,42 @@
-# Handwritten-Text Recogniser
-The objective of our project is to use Optical Character Recognition (OCR) library to accurately read handwritten registration numbers and total marks obtained and update them in an Excel sheet with a single click. The entire system is implemented as a web-based application for ease of use and accessibility.
+# 🧠 Automated Grading System
 
+An intelligent OCR-powered system for automatic evaluation of handwritten answer sheets.  
+It leverages **computer vision** and **transformer-based OCR** to detect roll numbers, extract marks, and streamline grading.
 
-Features
-📸 Live Camera Capture: Use your Android phone as an IP webcam to take answer sheet snapshots.
-📁 Image Upload Option: Supports uploading .jpg images manually.
-🧠 Region Detection: Automatically crops:
-Roll number (digits)
-Roll number (in words)
-Total marks
-🔍 Handwriting OCR: Uses microsoft/trocr-large-handwritten from HuggingFace for handwritten text recognition.
-🎨 Preprocessing Magic: Uses CLAHE, Gaussian blur, and adaptive thresholding to clean up image noise.
-🖥 Streamlit UI: Clean, interactive interface for live grading.
-🧾 Cropped Output: Saves cropped segments for manual verification if needed.
-🛠 Tech Stack
-Frontend: Streamlit
-OCR Engine: HuggingFace Transformers (TrOCR)
-Image Processing: OpenCV, PIL
-Others: NumPy, Requests
-📦 Installation
-Clone the Repository:
+---
+
+## 🚀 Features
+
+- 📸 **Live Camera Capture** — Use your Android phone as an **IP webcam** to capture answer sheet snapshots in real-time.  
+- 📁 **Image Upload Option** — Supports manual upload of `.jpg` images.  
+- 🧠 **Region Detection** — Automatically crops essential regions:
+  - Roll number (digits)
+  - Roll number (in words)
+  - Total marks  
+- 🔍 **Handwriting OCR** — Powered by [`microsoft/trocr-large-handwritten`](https://huggingface.co/microsoft/trocr-large-handwritten) from **Hugging Face** for high-accuracy handwritten text recognition.  
+- 🎨 **Preprocessing Magic** — Enhances image quality using:
+  - CLAHE (Contrast Limited Adaptive Histogram Equalization)
+  - Gaussian Blur
+  - Adaptive Thresholding  
+- 🖥 **Streamlit UI** — Interactive and clean web interface for live grading and visualization.  
+- 🧾 **Cropped Output Storage** — Saves cropped image segments for manual verification if needed.
+
+---
+
+## 🛠 Tech Stack
+
+| Component | Technology |
+|------------|-------------|
+| **Frontend** | Streamlit |
+| **OCR Engine** | Hugging Face Transformers (TrOCR) |
+| **Image Processing** | OpenCV, PIL |
+| **Others** | NumPy, Requests |
+
+---
+
+## 📦 Installation
+
+### 1️⃣ Clone the Repository
+```bash
 git clone https://github.com/your-username/automated-grading-system.git
 cd automated-grading-system
