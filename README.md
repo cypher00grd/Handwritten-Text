@@ -5,7 +5,7 @@ It leverages **computer vision** and **transformer-based OCR** to detect roll nu
 
 ---
 
-## 🚀 Features
+## 🚀 Features:
 
 - 📸 **Live Camera Capture** — Use your Android phone as an **IP webcam** to capture answer sheet snapshots in real-time.  
 - 📁 **Image Upload Option** — Supports manual upload of `.jpg` images.  
